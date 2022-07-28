@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  background: #eee;
+  color: #666;
+  scroll-behavior: smooth;
+}
+.btn:hover {
+  background: #0d976b;
+}
+.form-control {
+  font-size: 15px;
+  min-height: 48px;
+  font-weight: 400;
+}
+a.already-registered-btn {
+  color: #218061;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+a.already-registered-btn:hover {
+  color: #03412d;
+}
