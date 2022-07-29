@@ -1,9 +1,12 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<?php $pageTitle = "Login"; require_once('header.php'); ?>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -12,7 +15,7 @@
        <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <title>Login</title>
+
   </head>
   <body>
     <!-- form section -->
@@ -29,7 +32,7 @@
             <a href="#" class="text-danger">Forget password?</a>
             </div>
             <button class="btn btn-block btn-primary mt-3">Login</button>
-            <p class="mt-3 font-weight-normal">Don't have an account? <a href="#"> <strong>Register now</strong></a></p>
+            <p class="mt-3 font-weight-normal">Don't have an account? <a href="registration.php"> <strong>Register now</strong></a></p>
         </div>
     </div>
 

@@ -1,9 +1,12 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <?php $pageTitle = "Registration"; require_once('header.php'); ?>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -12,14 +15,14 @@
        <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <title>Registration</title>
+
   </head>
   <body>
     <!-- registration section -->
-    <div class="container">
-<div class="header mt-3 text-center">
+    <div class="container mt-4";>
+<div class="header mt-3 text-center ">
     <h2>Register Now</h2>
-    <hr color="green" width="70%">
+    <hr color="green" width="100%">
 </div>
 </div>
 
