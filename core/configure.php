@@ -1,13 +1,13 @@
 <?php
 
 $host = "localhost";
-$dbuser = "pieash9";
-$dbpassword = "kingsman";
-$dbname = "pieash_test";
+$dbuser = "pieash";
+$dbpwd = "@limon_3214";
+$dbname = "erailwaybd_db";
 
-$connect = mysqli_connect($host,$dbuser,$dbpassword,$dbname);
-if($connect == flase){
-    echo "<h1>Error! Database not connected</h1>";
+$connect = mysqli_connect($host, $dbuser, $dbpwd, $dbname);
+if ($connect == false) {
+    echo "<h1>Error!! Database not connected</h1>!";
 }
 
 ?>
