@@ -1,3 +1,6 @@
+<?php require_once("./core/configure.php"); ?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -21,7 +24,7 @@
 
 <body>
   <!-- form section -->
-  <form action="." method="POST">
+  <form action="./core/login_core.php" method="POST">
     <div class="login-container d-flex align-items-center justify-content-center">
       <div class="login-form text-center">
         <h2 class="mb-5 font-weight-light text-uppercase ">Login</h2>

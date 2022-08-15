@@ -1,3 +1,6 @@
+<?php require_once("./core/configure.php"); ?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -6,16 +9,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php $pageTitle = "Registration"; require_once('header.php'); ?>
+    <?php $pageTitle = "Registration";
+    require_once('header.php'); ?>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- login css link  -->
     <link rel="stylesheet" href="css/register.css">
     <!-- google font link -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -31,7 +33,22 @@
 
     <div class="registration-container mt-5">
         <div class="container">
-            <form  action="/Railway ticket/core/registration_core.php" method="POST">
+            <form action="core/registration_core.php" method="POST">
+                <?php
+                if (isset($_SESSION['status'])) { ?>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong></strong><?php echo $_SESSION['status'];  ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                <?php
+                    unset($_SESSION['status']);
+                } ?>
+                    
+                
+
                 <div class="row">
                     <div class="col-sm-6 mb-3">
                         <input type="text" class="form-control" placeholder="First name" name="first_name" required>
@@ -45,19 +62,17 @@
                         <input type="email" class="form-control" placeholder="Email" name="email" required>
                     </div>
                     <div class="col mb-3">
-                        <input type="number" class="form-control" placeholder="Mobile number" name="mobile_number"
-                            required>
+                        <input type="number" class="form-control" placeholder="Mobile number" name="mobile_number" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 mb-3">
-                        <input type="password" class="form-control" placeholder="Enter password" name="password"
-                            required>
+                        <input type="password" class="form-control" placeholder="Enter password" name="password" required>
                     </div>
                     <div class="col mb-3">
-                        <input type="password" class="form-control" placeholder="Confiirm password"
-                            name="confrim_password" required>
+                        <input type="password" class="form-control" placeholder="Confiirm password" name="confrim_password" required>
                     </div>
+
                 </div>
                 <div class="row">
                     <div class="col-sm-6 mb-3">
@@ -68,8 +83,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <textarea class="form-control m-3" id="" cols="30" rows="5" placeholder="Enter your address"
-                        name="address" required></textarea>
+                    <textarea class="form-control m-3" id="" cols="30" rows="5" placeholder="Enter your address" name="address" required></textarea>
                 </div>
                 <div class="row btn-submit">
                     <button type="submit" class="col-sm-3 col-md-3 btn btn-success btn-lg  m-3" name="submit">Sign
@@ -82,11 +96,9 @@
     </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
 
 
