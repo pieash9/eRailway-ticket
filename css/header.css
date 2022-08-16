@@ -40,7 +40,6 @@ nav ul li a {
   font-size: 18px;
   padding: 5px 0;
   text-transform: capitalize;
-
 }
 nav ul li a::before {
   position: absolute;
@@ -70,6 +69,22 @@ label #btn,
 }
 #check {
   display: none;
+}
+
+/* footer styling  */
+/* footer section  */
+
+#footer1 {
+  background: #002a32;
+  padding: 20px 23px;
+  color: #fff;
+}
+#footer1 span a {
+  color: crimson;
+  text-decoration: none;
+}
+#footer1 span a:hover {
+  text-decoration: underline;
 }
 
 /* media qurey start */

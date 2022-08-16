@@ -46,8 +46,8 @@
                 <?php
                     unset($_SESSION['status']);
                 } ?>
-                    
-                
+
+
 
                 <div class="row">
                     <div class="col-sm-6 mb-3">
@@ -105,3 +105,5 @@
 </body>
 
 </html>
+
+<?php require_once("footer.php"); ?>

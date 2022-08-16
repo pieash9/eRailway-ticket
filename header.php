@@ -48,7 +48,7 @@
                 <li><a class="text-decoration-none text-dark" href="#">Verify Ticket</a></li>
                 <li><a class="text-decoration-none text-dark" href="login.php">Login</a></li>
                 <li><a class="text-decoration-none text-dark" href="registration.php">Register</a></li>
-                <li><a class="text-decoration-none text-dark" href="#">Contact us</a></li>
+                <li><a class="text-decoration-none text-dark" href="contactUs.php">Contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -59,3 +59,4 @@
 </body>
 
 </html>
+

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- login css link  -->
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/home1.css">
     <!-- google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="Home-container mt-5">
+    <div class="Home-container m-5">
         <div class="container">
             <form action="#" method="POST">
                 <div class="col-sm-8">
@@ -40,26 +40,37 @@
 
                         <div class="col-sm-6 mb-3 ">
                             <label class="font-weight-bold" style="font-size: 18px;" for="from_station">From:</label>
-                            <select data-live-search="true" class="form-control selectpicker" placeholder="From station" name="from_station" id="from_station" required>
-                                <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-                                <option data-tokens="mustard">Burger, Shake and a Smile</option>
-                                <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-                            </select>
+                            <div style="border: 1px solid #dbdddd ; border-radius:4px">
+                                <select data-live-search="true" class="form-control selectpicker" placeholder="From station" name="from_station" id="from_station" required>
+                                    <option value="Choose">From station</option>
+                                    <option value="dhaka">Dhaka</option>
+                                    <option value="AC_S">AC_S</option>
+                                    <option value="SNIGDHA">SNIGDHA</option>
+                                    <option value="F_BERTH">F_BERTH</option>
+                                    <option value="F_SEAT">F_SEAT</option>
+                                    <option value="F_CHAIR">F_CHAIR</option>
+                                    <option value="S_CHAIR">S_CHAIR</option>
+                                    <option value="SHOVAN">SHOVAN</option>
+                                    <option value="SHULOV">SHULOV</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col mb-3">
                             <label class="font-weight-bold" style="font-size: 18px;" for="to_station">To:</label>
-                            <select type="text" class="form-control" placeholder="To station" name="to_station" id="to_station" required>
-                                <option value="Choose">To station</option>
-                                <option value="AC_B">AC_B</option>
-                                <option value="AC_S">AC_S</option>
-                                <option value="SNIGDHA">SNIGDHA</option>
-                                <option value="F_BERTH">F_BERTH</option>
-                                <option value="F_SEAT">F_SEAT</option>
-                                <option value="F_CHAIR">F_CHAIR</option>
-                                <option value="S_CHAIR">S_CHAIR</option>
-                                <option value="SHOVAN">SHOVAN</option>
-                                <option value="SHULOV">SHULOV</option>
-                            </select>
+                            <div style="border: 1px solid #dbdddd ; border-radius:4px">
+                                <select data-live-search="true" class="form-control selectpicker " placeholder="To station" name="to_station" id="to_station" required>
+                                    <option value="Choose">To station</option>
+                                    <option value="tangail">Tangail</option>
+                                    <option value="AC_S">AC_S</option>
+                                    <option value="SNIGDHA">SNIGDHA</option>
+                                    <option value="F_BERTH">F_BERTH</option>
+                                    <option value="F_SEAT">F_SEAT</option>
+                                    <option value="F_CHAIR">F_CHAIR</option>
+                                    <option value="S_CHAIR">S_CHAIR</option>
+                                    <option value="SHOVAN">SHOVAN</option>
+                                    <option value="SHULOV">SHULOV</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -69,8 +80,8 @@
                         </div>
                         <div class="col mb-3">
                             <label class="font-weight-bold" style="font-size: 18px;" for="choose_class">Choose Class:</label>
-                            <select type="text" class="form-control" placeholder="From station" name="choose_class" id="choose_class" required>
-                                <option value="AC_B">Choose a class</option>
+                            <select type="text" class="form-control" placeholder="To station" name="to_station" id="to_station" required>
+                                <option value="Choose">To station</option>
                                 <option value="AC_B">AC_B</option>
                                 <option value="AC_S">AC_S</option>
                                 <option value="SNIGDHA">SNIGDHA</option>
@@ -101,3 +112,5 @@
 </body>
 
 </html>
+
+<?php require_once("footer.php"); ?>

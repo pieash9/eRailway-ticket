@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 
-body{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    background: #eee;
-    color: #666;
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  background: #fff!important;
+  color: #666;
 }
-.login-container{
-    height: 100vh;
-    width: 100%;
+.login-container {
+  width: 100%;
 }
-.login-form{
-    max-width: 100%;
-    width: 370px;
-    padding: 15px;
-    margin: auto;
+.login-form {
+  max-width: 100%;
+  width: 370px;
+  padding: 15px;
+  margin: auto;
 }
-.btn:hover{
-    background: #067250;
+.btn:hover {
+  background: #067250;
 }
-.form-control{
-    font-size: 15px;
-    min-height: 48px;
-    font-weight: 400;
+.form-control {
+  font-size: 15px;
+  min-height: 48px;
+  font-weight: 400;
 }
-.forgot-link{
-    font-size: 13px;
-    margin-bottom: 0;
+.forgot-link {
+  font-size: 13px;
+  margin-bottom: 0;
 }
-.login-form a{
-    text-decoration: none;
-    color: #666;
+.login-form a {
+  text-decoration: none;
+  color: #666;
 }
-.login-form a:hover{
-    color: #723dbe;
+.login-form a:hover {
+  color: #723dbe;
 }

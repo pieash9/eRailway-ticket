@@ -1,7 +1,7 @@
-$(document).ready(function () {
-$("#from_station").selectpicker();
-})
+// select picker for home //
+
 $(document).ready(function () {
 $(".selectpicker").selectpicker();
 })
+
 
