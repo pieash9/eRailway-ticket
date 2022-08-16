@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- registration section -->
     <div class="container mt-4" ;>
         <div class="header mt-3 text-center ">

@@ -15,14 +15,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <!-- login css link  -->
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="./css/login.css">
   <!-- google font link -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <!-- form section -->
   <form action="./core/login_core.php" method="POST">
     <div class="login-container d-flex align-items-center justify-content-center">

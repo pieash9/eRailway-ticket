@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- home section -->
     <div class="container mt-4" ;>
         <div class="header mt-3 text-center ">
@@ -34,11 +34,11 @@
     <div class="Home-container m-5">
         <div class="container">
             <form action="#" method="POST">
-                <div class="col-sm-8">
+                <div class="col-md-8">
 
                     <div class="row">
 
-                        <div class="col-sm-6 mb-3 ">
+                        <div class="col-md-6 mb-3 ">
                             <label class="font-weight-bold" style="font-size: 18px;" for="from_station">From:</label>
                             <div style="border: 1px solid #dbdddd ; border-radius:4px">
                                 <select data-live-search="true" class="form-control selectpicker" placeholder="From station" name="from_station" id="from_station" required>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 mb-3">
+                        <div class="col-md-6 mb-3">
                             <label class="font-weight-bold" style="font-size: 18px;" for="choose_date">Date of journey:</label>
                             <input type="text" class="datepicker form-control hasDatepicker" placeholder="Choose date" name="choose_date" id="choose_date" data-date-format="dd/mm/yyyy" readonly="true" required>
                         </div>

@@ -78,6 +78,8 @@ label #btn,
   background: #002a32;
   padding: 20px 23px;
   color: #fff;
+  position: relative;
+  bottom: 0;
 }
 #footer1 span a {
   color: crimson;
